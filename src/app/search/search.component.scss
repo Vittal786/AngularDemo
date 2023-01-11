@@ -1,0 +1,23 @@
+body{
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  //align-items: center;
+  padding: 190px;
+  background: linear-gradient(135deg, #d2c5d0, #a2d8e3);
+}
+  input.ng-invalid.ng-touched{
+    border: red 1px solid;
+  }
+
+  sub{
+    //text-align: center;
+    color: rgb(45, 8, 231);
+    font-size:15px;
+    //margin-top:0%
+  }
+  h1{
+    color: hsl(317, 90%, 53%);
+    font-size: 35px;
+    font-weight: bold;
+  }

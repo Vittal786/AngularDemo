@@ -1,0 +1,56 @@
+.dd {
+    text-align: center;
+    background-color: aliceblue;
+
+
+     padding-left: 5%;
+     padding-right: 20%;
+     
+
+}
+
+button {
+    min-width: 10rem;
+    margin-right: .5rem;
+}
+
+@media screen and (max-width: 960px) {
+    button {
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+}
+label {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #333;
+    height: 10px;
+    width: 400px;
+    margin-top: 35px;
+    margin-left: 80px;
+    text-align: right;
+    clear:both;
+   }
+
+.button {
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+b {
+    color: rgb(21, 105, 109);
+
+   border: 100%;
+}
+
+h3{
+    text-align: center;
+    color: white;
+    background-color: #0e5ea2;
+
+}
+
+.p-button {
+    background-color: #0e5ea2;
+}

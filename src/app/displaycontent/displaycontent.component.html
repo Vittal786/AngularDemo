@@ -1,0 +1,35 @@
+<h1>Static data displayed using Interpolation & Directives Concepts</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #e8edf1;
+  color: rgb(26, 22, 22);
+  padding: 3px;
+}
+.grid-item {
+  background-color: rgba(251, 254, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 25px;
+  text-align: center;
+}
+</style>
+</head>
+<body *ngFor="let data of usersData"> 
+  <!-- it is a directive to iterate data  -->
+<div class="grid-container">
+    <div class="grid-item">College: {{data.college}}</div>
+  <div class="grid-item">Fee: {{data.fee}}</div>
+  <div class="grid-item">Contact: {{data.contact}}</div>
+</div>
+</body>
+</html>
+
+
+  
+
+

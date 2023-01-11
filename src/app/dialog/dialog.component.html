@@ -1,0 +1,103 @@
+<html>
+  <body class="container" >
+       <h1>REGISTARTION FORM</h1>
+<p-card styleClass="user-form" class="flex justify-content-center" >
+   <div class="register-form">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+
+    <div class="ll">
+      <div class="form-group">
+            <label class="block"> First name  :</label><br>
+            <input type="text"  formControlName="firstname"  pInputText  class="form-control" required minlength="3" maxlength="10" size="30" class="p-inputtext-sm"/>
+            <small class="p-error block"  *ngIf="userForm.get('firstname')?.invalid && userForm?.get('firstname')?.dirty">firstname is required</small>
+     </div> 
+
+     <div class="jk">
+     <div class="form-group" id="hhh">
+              <label class="block"> Last Name :</label>
+              <input type="text"  formControlName="lastname"  pInputText class="form-control" size="30" class="p-inputtext-sm"/>
+              <small class="p-error block"  *ngIf="userForm.get('lastname')?.invalid && userForm?.get('lastname')?.dirty">lastname is required</small>
+       </div> 
+      </div>
+      </div>
+
+     <div class="ll">
+      <div class="form-group">        
+       <label class="block">Email :</label>
+        <input type="text"  formControlName="email"  pInputText  class="form-control" size="30" class="p-inputtext-sm" />
+        <small class="p-error block"  *ngIf="userForm.get('email')?.invalid && userForm?.get('email')?.dirty">email should be valid</small>
+    </div>
+    <div class="jk">
+     <div class="form-group">  <label class="block">Phone :</label> <br>
+      <input   
+       formControlName="phone"  
+       id="mobileNumber"   
+       type="text"   
+       class="form-control" pInputText
+       size="30" class="p-inputtext-sm">
+
+      <small class="p-error block"  *ngIf="userForm.get('phone')?.invalid && userForm?.get('phone')?.dirty">Please enter 10 digit valid number</small>
+     </div>
+     </div>
+     </div>
+
+
+     <div class="ll">
+     <div class="form-group">        
+      <label class="block" for="date" >Date Of Birth</label><br>
+      <p-calendar  inputId="date" value="bb" name="dob"  formControlName="dob" size="600" ></p-calendar>
+      <small class="p-error block"  *ngIf="userForm.get('dob')?.invalid && userForm?.get('dob')?.dirty">dob should be valid</small>
+     </div>
+     <div class="jkk">
+
+     <div class="form-group">
+      <label for="gender">Gender  </label><br>
+        <input id="male" type="radio" value="male" name="gender"   formControlName="gender">
+        <label for="male">Male</label>
+       
+        <div class="space"></div>
+        <input id="female" type="radio" value="female" name="gender"   formControlName="gender">
+        <label for="female">Female</label>
+     <small class="p-error block"  *ngIf="userForm.get('gender')?.invalid && userForm?.get('gender')?.dirty">must and should be selected one</small>
+    </div>
+    </div>
+  </div>
+
+
+     
+  <div class="form-group" >
+    <label >Select College</label><br>
+    <select class="form-group"  formControlName="college" size="1" class="p-inputtext-sm" style="width:505px;" pInputText>
+      <option value="" >select </option>
+<!-- <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="Select a City" optionLabel="name" [showClear]="true"></p-dropdown> -->
+
+      <option *ngFor="let city of City"  class="lll" [ngValue]="city" >{{city}} </option>
+    </select>
+      <small class="form-group"  *ngIf="userForm.get('history')?.invalid && userForm?.get('history')?.dirty">Dropdown must be selected</small>
+  </div>
+ 
+  
+  
+  <div class="form-group">  <label >Address :</label> <br>
+    <textarea rows="5" cols="30" formControlName="address" pInputTextarea size="30" class="p-inputtext-sm" style="width: 150%; max-width: 150%;"></textarea>
+      <small class="p-error block"  *ngIf="userForm.get('Address')?.invalid && userForm?.get('Address')?.dirty">Address is required</small>
+  </div>
+  
+ 
+
+
+
+
+
+<div class="form-group">
+  <button type="submit" (click)="onSubmit()"  pButton label="Submit"></button>
+  <div class="space11"></div>
+  <button type="reset" (click)="onReset()"  pButton label="Reset" [style]="{'margin-left': '.5em'}"></button>
+</div>
+          </form>
+          </div>
+          </p-card>
+            
+    </body>
+  </html>

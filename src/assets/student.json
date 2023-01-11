@@ -1,0 +1,12 @@
+[
+    {"Courses":"Java","Faculty":"Vittal","Place":"Hyd", "Duration":"6M"},
+    {"Courses":"C++","Faculty":"Shaik","Place":"Dmk", "Duration":"6M"},
+    {"Courses":"Core","Faculty":"Ramya","Place":"Kmr", "Duration":"6M"},
+    {"Courses":"Spring","Faculty":"Dinesh","Place":"Bns", "Duration":"6M"},
+    {"Courses":"Oracle","Faculty":"Harika","Place":"PTL", "Duration":"6M"}
+   
+]
+
+
+
+

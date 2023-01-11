@@ -1,0 +1,49 @@
+
+    [
+      {
+        "firstname": "Vittal",
+        "lastname": "Chari",
+        "address": "Key Stone",
+        "college": "Mars Tel",
+        "gender": "male",
+        "email": "vittal@gmail.com",
+        "dob": "20-05-1999",
+        "phone": "8790932401"
+      },
+
+      {
+        "firstname": "Anil",
+        "lastname": "Chari",
+        "address": "A Doamon",
+        "college": "Mars Tel",
+        "gender": "male",
+        "email": "anil@gmail.com",
+        "dob": "20-05-1999",
+        "phone": "8790932401"
+      },
+      {
+        "firstname": "Dinesh",
+        "lastname": "Reddy",
+        "address": "Hermes",
+        "college": "Mars Tel",
+        "gender": "male",
+        "email": "dineshgmail.com",
+        "dob": "20-05-1999",
+        "phone": "8790932401"
+      },
+      {
+        "firstname": "Ramya",
+        "lastname": "Reddy",
+        "address": "Atlas",
+        "college": "Mars Tel",
+        "gender": "male",
+        "email": "ramya@gmail.com",
+        "dob": "20-05-1999",
+        "phone": "8790932401"
+      }
+    ]
+    
+    
+    
+
+

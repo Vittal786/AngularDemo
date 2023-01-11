@@ -1,0 +1,34 @@
+<div class="hh">
+<!-- <table>
+    
+<h1>{{500 | percent }}</h1>
+<h1>{{500 | currency }}</h1>
+<h1>{{500 | currency:'INR' }}</h1>
+<h1>{{ date | date:'short' }}</h1>
+</table>
+</div> -->
+<table class="table table-striped">
+    <thead>
+    <tr>
+    <td>Name</td>
+    <td>Percentage</td>
+    <td>Currency</td>
+    <td>Date</td>
+    <td>Long Date</td>
+    <td>Long Time</td>
+    <td>Number</td>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ name | titlecase }}</td>
+            <td>{{500 | percent}}</td>
+            <td>{{500 | currency:'INR'}}</td>
+            <td>{{ date | date:'short' }}</td>
+            <td>{{ date | date:'longDate' }}</td>
+            <td>{{ date | date:'longTime' }}</td>
+            <td>{{ 5.6688 | number:'2.2-3' }}</td>
+        
+        </tr>
+    </tbody>
+    </table>

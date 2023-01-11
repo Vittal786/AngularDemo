@@ -1,0 +1,33 @@
+<p-toast></p-toast>
+<div class="contariner">
+<div class="row">
+<div class="search-hero">
+<input type="text" name="search" [(ngModel)]="searchText"  placeholder=" search by student ,id country" pInputTextarea>
+</div>
+<table class="table table-striped">
+<thead>
+<tr>
+<td>Id</td>
+<td>Student Name</td>
+<td>Address</td>
+</tr>
+</thead>
+<tbody>
+    <tr *ngFor= "let students of student | filter:searchText">
+    <td>{{students.id}}</td>
+    <td>{{students.name}}</td>
+    <td>{{students.address}}</td>
+    </tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<p-toast position="top-left" key="tl"></p-toast>
+<p-toast position="top-center" key="tc"></p-toast>
+<p-toast position="bottom-center" key="bc"></p-toast>
+
+<div class="button">
+    <button type="button" pButton pRipple (click)="showError()" label="Show More" class="p-button-danger"></button>
+</div>
+

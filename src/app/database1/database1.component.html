@@ -1,0 +1,24 @@
+<div [formGroup]="form">
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="enter your name" name="name" formControlName="name">
+      </div>
+
+      <div class="form-group">
+        <label for="lname">LastName</label>
+        <input type="text" class="form-control" id="lname" placeholder="enter your lastname" name="lname" formControlName="lname">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="number" class="form-control" id="number" placeholder="enter your number" name="phoneNumber" formControlName="phoneNumber">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Name</label>
+                <input type="email" class="form-control" id="email" placeholder="enter your mail" name="email" formControlName="email">
+                </div>
+   <button class="btn btn-secondary"  (click)="saveCall()">Save</button>
+   
+    </div>
